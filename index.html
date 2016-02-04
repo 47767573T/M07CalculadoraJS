@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+<link rel="stylesheet" type="text/css" href="myStyle.css"/>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+    <div class= calculadora>
+       <form action="#" name="calculadora" id="calc">
+           <p id="resultado"> {{ operar() | number }}   </p>
+           <p>
+               <input type="button" value="7" onclick="sumar()" />
+               <input type="button" value="8" />
+               <input type="button" value="9" />
+               <input type="button" value="/"  />
+           </p>
+           <p>
+               <input type="button" value="4" />
+               <input type="button" value="5" />
+               <input type="button" value="6" />
+               <input type="button" value="*" />
+           </p>
+           <p>
+               <input type="button" value="1" />
+               <input type="button" value="2" />
+               <input type="button" value="3" />
+               <input type="button" value="-" />
+           </p>
+           <p>
+               <input type="button" value="0" />
+               <input type="button" value="+/-" />
+               <input type="button" value="." />
+               <input type="button" value="+" />
+           </p>
+           <p>
+               <input type="button" class="igual" value="="/>
+               <input type="button" class="especial" value="clear"/>
+           </p>
+
+           <!-- Modules -->
+           <script src="app.js"></script>
+           <!-- Controllers -->
+           <script src="controller.js"></script>
+       </form>
+    </div>
+       </body>
+       </html>
